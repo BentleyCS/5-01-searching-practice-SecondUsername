@@ -12,8 +12,8 @@ def test_binary_search():
     assert HW.binarySearch([1,3,5,7,9],5) == (2,1)
     assert HW.binarySearch([1,3,5,7,9],7) == (3,2)
     assert HW.binarySearch([1,3,5,7,9],9) == (4,3)
-    assert HW.binarySearch([1,3,5,7,9],1) == (0,2)
-    assert HW.binarySearch([1,3,5,7,9],3) == (1,3)
+    assert HW.binarySearch([1,3,5,7,9],1) == (0,2) # originally was (0,2), but doing it manually, it should be 0,3
+    assert HW.binarySearch([1,3,5,7,9],3) == (1,3) # same as above but (1,3) -> (1,2)
     assert HW.binarySearch([1,3,5,7,9],10) == (-1,3)
     li = []
     for i in range(500):
